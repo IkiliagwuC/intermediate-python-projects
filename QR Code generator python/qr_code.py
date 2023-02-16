@@ -13,5 +13,5 @@ img = qr.make_image()
 img.save("pydocsQRcode.jpg")
 
 # optional
-# pip install qrcode[pil] to edit the colora
+# pip install~ qrcode[pil] to edit the colora
 #img= qr.make_image(fill_color = 'green', back_color = 'white')
