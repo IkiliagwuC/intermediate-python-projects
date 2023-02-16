@@ -11,26 +11,26 @@ def print_number_2(num):
 #output time before function
 start_time = time.time()
 #run function 
-print_number(100)
+print_number(10000)
 
 #output time after function
 end_time = time.time()
 
 #calculate the time difference
 time_elapsed = end_time - start_time
-print(time_elapsed)
+print("list comprehension: ",time_elapsed)
 
 #output time before function
 start_time = time.time()
 #run function 
-print_number_2(100)
+print_number_2(10000)
 
 #output time after function
 end_time = time.time()
 
 #calculate the time difference
 time_elapsed = end_time - start_time
-print(time_elapsed)
+print("map function: ",time_elapsed)
 
 
 
@@ -44,13 +44,13 @@ print_number(100)
 """
 
 setup = """
-def print_number(num):
+def print_number(n):
     return [str(num) for num in range(n)]
 """
 
 #timeit
 total_time = timeit.timeit(stmt, setup)
-print(total_time)
+print("timeit list: ", total_time)
 
 stmt = """
 print_number(100)
@@ -63,7 +63,7 @@ def print_number(num):
 
 #timeit
 total_time = timeit.timeit(stmt, setup)
-print(total_time)
+print("timeit map: ", total_time)
 
 
     
