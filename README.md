@@ -1,3 +1,3 @@
 # intermediate-python-projects
 
-Collection of intermediate python projects that I have coded
+Collection of intermediate python projects that I have code
